@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Pomodoro timer</title>
+</head>
+<body>
+    <div class = container>
+    <h1>Pomodoro timer 🍅</h1>
+    <div class="inputs">
+        Učenje 📚 <input type="number" id="studyTime" value="25" min="1"><br>
+        Pauza ⏸️ <input type="number" id="breakTime" value="5" min="1">
+    </div>
+    <div class="timer-display" id="timer"></div>
+    <div class="buttons">
+        <button id="start">Start</button>
+        <button id="pause">Pause</button>
+        <button id="reset">Reset</button>
+    </div>
+    <br>
+    <p id="mode">Učenje 📚</p>
+    <p>Ukupno vrijeme rada: <span id="total">0</span> min</p>
+    <audio id="alarm" src="https://actions.google.com/sounds/v1/alarms/beep_short.ogg" preload="auto"></audio>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
